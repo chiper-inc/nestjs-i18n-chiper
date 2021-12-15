@@ -1,0 +1,1 @@
+export const I18N_CHIPER_CONFIG_TOKEN = Symbol('I18N_CHIPER_CONFIG');

@@ -1,0 +1,83 @@
+{
+  "name": "nestjs-i18n-chiper",
+  "version": "1.0.0",
+  "description": "i18n chiper for nestjs",
+  "author": "Chiper <cristian.ippolito@chiper.co>",
+  "homepage": "",
+  "license": "MIT",
+  "keywords": [
+    "NestJS",
+    "TypeScript"
+  ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiper-inc/nestjs-i18n-chiper.git"
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "build:watch": "tsc --build tsconfig.build.json --watch",
+    "test": "jest"
+  },
+  "bugs": {
+    "url": "https://github.com/chiper-inc/nestjs-i18n-chiper/issues"
+  },
+  "dependencies": {
+    "@nestjs/common": "8.2.3",
+    "@nestjs/core": "8.2.3",
+    "@nestjs/platform-express": "8.2.3",
+    "i18next": "21.6.0",
+    "i18next-http-backend": "1.3.1",
+    "reflect-metadata": "0.1.13",
+    "rimraf": "3.0.2",
+    "rxjs": "7.4.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "8.1.6",
+    "@nestjs/schematics": "8.0.5",
+    "@nestjs/testing": "8.2.3",
+    "@types/express": "4.17.13",
+    "@types/jest": "27.0.3",
+    "@types/node": "16.11.12",
+    "@types/supertest": "2.0.11",
+    "@typescript-eslint/eslint-plugin": "5.7.0",
+    "@typescript-eslint/parser": "5.7.0",
+    "apollo-server-express": "3.5.0",
+    "eslint": "8.4.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "jest": "27.4.5",
+    "prettier": "2.5.1",
+    "supertest": "6.1.6",
+    "ts-jest": "27.1.1",
+    "ts-loader": "9.2.6",
+    "ts-node": "10.4.0",
+    "tsconfig-paths": "03.11.0",
+    "typescript": "4.5.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}

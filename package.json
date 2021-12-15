@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "i18n chiper for nestjs",
   "author": "Chiper <cristian.ippolito@chiper.co>",
-  "homepage": "",
+  "homepage": "https://github.com/chiper-inc/nestjs-i18n-chiper",
   "license": "MIT",
   "keywords": [
     "NestJS",

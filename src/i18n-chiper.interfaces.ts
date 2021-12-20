@@ -2,6 +2,8 @@ import { ModuleMetadata, Type } from '@nestjs/common';
 
 export interface I18nChiperOptions {
   i18nLocalesBaseUrl: string;
+  namespaces?: string[];
+  defaultNamespace?: string;
 }
 
 export interface I18nChiperOptionsFactory {

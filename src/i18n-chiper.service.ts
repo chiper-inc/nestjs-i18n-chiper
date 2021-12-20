@@ -24,13 +24,15 @@ export class I18nChiperService {
   }
 
   private async init() {
+    const { i18nLocalesBaseUrl, namespaces, defaultNamespace } = this.options;
+
     const t = await i18next.use(i18nextHttpBackend).init({
       fallbackLng: 'es-CO',
       preload: ['pt-BR', 'es-CO', 'es-MX'],
-      ns: ['translations'],
-      defaultNS: 'translations',
+      ns: namespaces || ['translations'],
+      defaultNS: defaultNamespace || 'translations',
       backend: {
-        loadPath: `${this.options.i18nLocalesBaseUrl}{{lng}}/{{ns}}.json`,
+        loadPath: `${i18nLocalesBaseUrl}{{lng}}/{{ns}}.json`,
       },
     });
 
